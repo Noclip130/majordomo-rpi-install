@@ -1,7 +1,11 @@
 #!/bin/bash
 
 showMessage "Installing PHP..."
-showMessage "Using default PHP version."
+showMessage "Using PHP 7.4 version."
+
+runSudo "add-apt-repository ppa:ondrej/apache2"
+runSudo "add-apt-repository ppa:ondrej/php"
+
 runSudo "apt-get install -y php7.4"
 
 showMessage "PHP version installed: 7.4"
