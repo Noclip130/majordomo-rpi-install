@@ -2,7 +2,7 @@
 
 showMessage "Installing PHP..."
 showMessage "Using default PHP version."
-runSudo "apt-get install -y php"
+runSudo "apt-get install -y php7.4"
 
 showMessage "PHP version installed: 7.4"
 
